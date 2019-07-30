@@ -1,0 +1,17 @@
+
+
+  Java 1.7 version of Phil Bennett's GAS chemical equilibrium code
+    Ian Short
+
+  Main method is GsCalc - run this to run whole package
+    - GsCalc - loops over temperatures and writes partial pressures (PPs) to output file
+    --- input parameters all set by hand in code
+
+  Calls custom java ports of dgefa and dgesl
+   and of daxpy, dscal and idamax - all part of distribution 
+
+  Output files:  Written in Outputs/ - this subdirectory must already exist in the run directory
+   - file name of form GsCalcpt[PT value]is[ISOLV value]
+   - extension *.out - report for human readers
+   - extension *.2.out - input for GsPlot 
+
